@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">SplashDemo0</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="welcome_to_infuse">Welcome To INFUSE</string>
+    <string name="test">TEST</string>
+    <string name="ty_week">TY Week</string>
+    <string name="a_week_dedicated_to_showcasing_a_career_at_ericsson_and_how_ericsson_interacts_with_the_world">A week dedicated to showcasing a career at Ericsson and how Ericsson interacts with the world</string>
+    <string name="tech_day">Tech Day</string>
+    <string name="a_day_showcasing_technological_advances_and_ongoing_project_within_ericsson">A day showcasing technological advances and ongoing project within Ericsson</string>
+    <string name="career_talk">Career Talk</string>
+    <string name="blah_blah_blah">blah blah blah</string>
+    <string name="school_tour">School Tour</string>
+    <string name="aaaaaaaaaaaaaaaaa">aaaaaaaaaaaaaaaaa</string>
+    <string name="website_videos">Website Videos</string>
+    <string name="naaaaaaaaah">naaaaaaaaah</string>
+    <string name="girls_in_ict">Girls in ICT</string>
+    <string name="hbudecihecdeokjedmckoedko">hbudecihecdeokjedmckoedko</string>
+    <string name="android_internship">Android Internship</string>
+    <string name="whhyyyyyyyy">whhyyyyyyyy</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="email_infuse_ericsson_com">Email: infuse@ericsson.com</string>
+    <string name="phone_086_234_5678">Phone: (086) 234 5678</string>
+    <string name="website_www_ericsson_com">Website: www.ericsson.com</string>
+</resources>
