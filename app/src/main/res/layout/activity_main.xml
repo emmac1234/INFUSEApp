@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/welcome_to_infuse"
+            android:textColor="@color/colorForText"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/contact_us"
+            android:textColor="@color/colorForText"
+            android:textSize="20sp"
+            tools:ignore="VisualLintOverlap" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginStart="10dp"
+            android:gravity="bottom"
+            android:text="@string/email_infuse_ericsson_com"
+            android:textColor="@color/colorForText"
+            android:textSize="15sp"
+            tools:ignore="VisualLintOverlap" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:gravity="bottom"
+            android:text="@string/phone_086_234_5678"
+            android:textColor="@color/colorForText"
+            android:textSize="15sp"
+            tools:ignore="VisualLintOverlap" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_marginStart="10dp"
+            android:gravity="bottom"
+            android:text="@string/website_www_ericsson_com"
+            android:textColor="@color/colorForText"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:layout_below="@id/header"
+        tools:ignore="ScrollViewCount">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button_ty"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/ty_week_bg"
+                android:fadeScrollbars="true"
+                android:fontFamily="sans-serif-medium"
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:text="@string/ty_week_na_week_dedicated_to_showcasing_a_career_at_ericsson_and_how_ericsson_interacts_with_the_world"
+                android:textAlignment="textStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorForText"
+                android:visibility="visible"
+                tools:ignore="RtlCompat,TextContrastCheck,TextSizeCheck,VisualLintButtonSize" />
+
+            <Button
+                android:id="@+id/button_tech"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/tech_day_bg"
+                android:fontFamily="sans-serif-medium"
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:text="@string/tech_day_na_day_showcasing_technological_advances_and_ongoing_project_within_ericsson"
+                android:textAlignment="textStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorForText"
+                android:typeface="normal"
+                tools:ignore="RtlCompat,TextContrastCheck,TextSizeCheck,VisualLintButtonSize" />
+
+            <Button
+                android:id="@+id/button_career"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/career_talks_bg"
+                android:fontFamily="sans-serif-medium"
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:text="@string/career_talk_ntalk_to_people_who_work_in_ericsson_and_gain_valuable_insight_into_a_career_at_ericsson"
+                android:textAlignment="textStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorForText"
+                android:typeface="normal"
+                tools:ignore="RtlCompat,TextContrastCheck,TextSizeCheck,VisualLintButtonSize" />
+
+            <Button
+                android:id="@+id/button_school"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/school_tour_bg"
+                android:fontFamily="sans-serif-medium"
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:text="@string/school_tour_nlearn_more_about_the_different_types_of_school_tours_ericsson_offers"
+                android:textAlignment="textStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorForText"
+                android:typeface="normal"
+                tools:ignore="RtlCompat,TextContrastCheck,TextSizeCheck" />
+
+            <Button
+                android:id="@+id/button_website"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/website_videos_bg"
+                android:fontFamily="sans-serif-medium"
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:text="@string/website_videos_nlearn_scratch_and_micro_bit_with_these_helpful_and_easy_to_follow_videos"
+                android:textAlignment="textStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorForText"
+                android:typeface="normal"
+                tools:ignore="RtlCompat,VisualLintButtonSize" />
+
+            <Button
+                android:id="@+id/button_girls"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/girls_in_ict_bg"
+                android:fontFamily="sans-serif-medium"
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:text="@string/girls_in_ict_n_describes_and_uses_statistics_to_demonstrate_the_importance_of_girls_in_ict"
+                android:textAlignment="textStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorForText"
+                android:typeface="normal"
+                tools:ignore="RtlCompat,VisualLintButtonSize" />
+
+            <Button
+                android:id="@+id/button_internship"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/android_intern_bg"
+                android:fontFamily="sans-serif-medium"
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:text="@string/android_internship_important_information_about_an_internship_as_a_software_engineer_and_how_to_apply"
+                android:textAlignment="textStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorForText"
+                android:typeface="normal"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
