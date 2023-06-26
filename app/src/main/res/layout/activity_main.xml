@@ -112,6 +112,7 @@
                 android:layout_marginTop="30dp"
                 android:background="@drawable/tech_day_bg"
                 android:fontFamily="sans-serif-medium"
+                android:onClick="techclick"
                 android:orientation="horizontal"
                 android:padding="3dp"
                 android:text="@string/tech_day_na_day_showcasing_technological_advances_and_ongoing_project_within_ericsson"
