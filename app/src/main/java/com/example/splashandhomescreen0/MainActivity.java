@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity{
 //            }
 //        });
 //
-//        Button button3 = findViewById(R.id.button_girls);
+//        Button button3 = findViewById(R.id.button_ty);
 //        button3.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
