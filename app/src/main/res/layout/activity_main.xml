@@ -154,7 +154,7 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textColor="@color/colorForText"
                 android:typeface="normal"
-                tools:ignore="RtlCompat,TextContrastCheck,TextSizeCheck" />
+                tools:ignore="RtlCompat,TextContrastCheck,TextSizeCheck,VisualLintButtonSize" />
 
             <Button
                 android:id="@+id/button_website"
@@ -205,7 +205,7 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textColor="@color/colorForText"
                 android:typeface="normal"
-                tools:ignore="RtlCompat" />
+                tools:ignore="RtlCompat,VisualLintButtonSize" />
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
