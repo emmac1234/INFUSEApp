@@ -87,7 +87,7 @@
             android:ems="10"
             android:gravity="start|top"
             android:inputType="textMultiLine"
-            android:text="@string/tech_day_gives_amazing_opportunities_to_schools_around_ireland_they_get_a_chance_to_come_on_site_to_ericsson_and_present_their_young_scientist_projects_and_showcase_their_amazing_work_last_year_moate_community_school_presented_their_project_coding_the_solution_to_ireland_s_scam_call_issue_which_they_were_awarded_first_place_in_the_junior_technology_category_at_bt_young_scientist_2022"
+            android:text="@string/tech_day_gives_amazing_opportunities_to_schools_around_ireland_they_get_a_chance_to_come_on_site_to_ericsson_and_present_their_young_scientist_projects_and_showcase_their_amazing_work_last_yearmoate_community_school_presented_their_project_coding_the_solution_to_ireland_s_scam_call_issue_which_they_were_awarded_first_place_in_the_junior_technology_category_at_bt_young_scientist_2022"
             tools:ignore="Autofill,LabelFor" />
 
         <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
