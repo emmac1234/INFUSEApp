@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,17 +7,83 @@
     android:background="#FFFFFF"
     android:orientation="vertical"
     tools:context=".TechActivity">
-
-
-    <TextView
-        android:id="@+id/TechDay"
+    <RelativeLayout
+        android:id="@+id/techheader"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Tech Day"
+            android:textColor="@color/colorForText"
+            android:textSize="30sp"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/techfooter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#3572DE"
-        android:text="Tech Day"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp" />
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/contact_us"
+            android:textColor="@color/colorForText"
+            android:textSize="20sp"
+            tools:ignore="VisualLintOverlap" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginStart="10dp"
+            android:gravity="bottom"
+            android:text="@string/email_infuse_ericsson_com"
+            android:textColor="@color/colorForText"
+            android:textSize="15sp"
+            tools:ignore="VisualLintOverlap" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:gravity="bottom"
+            android:text="@string/phone_086_234_5678"
+            android:textColor="@color/colorForText"
+            android:textSize="15sp"
+            tools:ignore="VisualLintOverlap" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_marginStart="10dp"
+            android:gravity="bottom"
+            android:text="@string/website_www_ericsson_com"
+            android:textColor="@color/colorForText"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+<ScrollView
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/techfooter"
+    android:layout_below="@+id/techheader"
+    tools:ignore="ScrollViewCount">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -32,7 +98,8 @@
             android:background="#AA9F9F"
             android:text="Ericsson's Tech Day 2023"
             android:textAlignment="center"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            tools:ignore="HardcodedText,InefficientWeight,TextContrastCheck" />
 
     </LinearLayout>
 
@@ -52,7 +119,8 @@
 
             android:text='This year’s Tech Day in Ericsson is scheduled for the 5th of October 2023. It explores how we are putting developers and the developer experience at the core of everything we do. Learn about how we are defining modern technology and standards that shape the telecoms industry. Experience how we continue to deliver the software and features that help our customers keep the world connected. This year’s theme is "Experience | Innovate | Evolve”'
             android:textColor="#000000"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            tools:ignore="Autofill,HardcodedText,InefficientWeight,LabelFor" />
     </LinearLayout>
 
     <LinearLayout
@@ -66,7 +134,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:adjustViewBounds="true"
-            app:srcCompat="@drawable/img" />
+            app:srcCompat="@drawable/img"
+            tools:ignore="ContentDescription" />
 
         <ImageView
             android:id="@+id/imageView2"
@@ -74,7 +143,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:adjustViewBounds="true"
-            app:srcCompat="@drawable/img_1" />
+            app:srcCompat="@drawable/img_1"
+            tools:ignore="ContentDescription" />
 
     </LinearLayout>
 
@@ -90,7 +160,8 @@
             android:background="#A99E9E"
             android:text="What Happens at Tech Day"
             android:textAlignment="center"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            tools:ignore="HardcodedText,TextContrastCheck" />
 
         <EditText
             android:id="@+id/editTextTextMultiLine2"
@@ -100,9 +171,10 @@
             android:ems="10"
             android:gravity="start|top"
             android:inputType="textMultiLine"
-            android:text="Some of the activities and presentations that take place on Tech Day include a description on what 5G is and how this technology has developed. We learn how Ericsson has worked on helping with the recovery of countries and places that have been hit by natural disasters and have no contact with anyone."
+            android:text="@string/some_of_the_activities_and_presentations_that_take_place_on_tech_day_include_a_description_on_what_5g_is_and_how_this_technology_has_developed_we_learn_how_ericsson_has_worked_on_helping_with_the_recovery_of_countries_and_places_that_have_been_hit_by_natural_disasters_and_have_no_contact_with_anyone"
 
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            tools:ignore="Autofill,LabelFor" />
 
         <TextView
             android:id="@+id/benefits2023"
@@ -110,9 +182,10 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="#A99E9E"
-            android:text="Why Tech Day is Beneficial"
+            android:text="@string/why_tech_day_is_beneficial"
             android:textAlignment="center"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            tools:ignore="TextContrastCheck" />
 
         <EditText
             android:id="@+id/editTextTextMultiLine4"
@@ -122,7 +195,8 @@
             android:gravity="start|top"
             android:inputType="textMultiLine"
             android:text="Improving the working environment and promoting relationships between employees who work at the same company group. Increasing Awareness about Newer, Upcoming Technologies to be prepared for change to stay ahead of competition. "
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            tools:ignore="Autofill,HardcodedText,LabelFor" />
 
     </LinearLayout>
 
@@ -132,41 +206,19 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/myButton"
+            android:id="@+id/techvideo"
+            android:background="@drawable/techdayinnerbutton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#009688"
             android:onClick="ericssonSettings"
-            android:text="Click Here to See Ericsson 2022 Tech Day !" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="43dp"
-            android:orientation="horizontal">
-
-            <EditText
-                android:id="@+id/editTextTextMultiLine3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#3572DE"
-                android:backgroundTint="#3572DE"
-                android:ems="10"
-                android:gravity="start|top"
-                android:inputType="textMultiLine"
-
-                android:text="Contact Us
-                  Email: INFO@EST.TECH
-                                                         Phone:(090) 643 1000   Website: Ericsson.com"
-                android:textColor="#FFFFFF"
-                android:textSize="16sp" />
-
-        </LinearLayout>
-
+            android:text="@string/click_here_to_see_ericsson_2022_tech_day" />
     </LinearLayout>
 
+    </LinearLayout>
+</ScrollView>
 
-</LinearLayout>
+
+</RelativeLayout>
 
 
 

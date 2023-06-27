@@ -1,7 +1,6 @@
 package com.example.splashandhomescreen0;
 
 import android.os.Bundle;
-import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,19 +11,12 @@ import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTube
 
 public class TechVidActivity extends AppCompatActivity {
 
-    private YouTubePlayerView youTubePlayerView;
-    Button button;
-
-    public YouTubePlayerView getYouTubePlayerView() {
-
-        return null;
-    }
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_techdayvid);
 
 
-        youTubePlayerView =findViewById(R.id.youtubeplayerId);
+        YouTubePlayerView youTubePlayerView = findViewById(R.id.youtubeplayerId);
 
         youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
             @Override

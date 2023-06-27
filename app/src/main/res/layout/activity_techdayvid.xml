@@ -1,84 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".TechActivity">
 
-    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
-        android:id="@+id/youtubeplayerId"
+    <RelativeLayout
+        android:id="@+id/techvideoheader"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.481">
-
-    </com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView>
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/youtubeplayerId"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:gravity="center">
 
         <TextView
-            android:id="@+id/textView"
-            android:layout_width="411dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#3572DE"
-            android:text="Ericsson 2022 Tech Day"
-            android:textAlignment="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/ericsson_2022_tech_day"
             android:textColor="#FFFFFF"
             android:textSize="30sp" />
+    </RelativeLayout>
 
+    <RelativeLayout
+        android:id="@+id/techvideofooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/contact_us"
+            android:textColor="@color/colorForText"
+            android:textSize="20sp"
+            tools:ignore="VisualLintOverlap" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginStart="10dp"
+            android:gravity="bottom"
+            android:text="@string/email_infuse_ericsson_com"
+            android:textColor="@color/colorForText"
+            android:textSize="15sp"
+            tools:ignore="VisualLintOverlap" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:gravity="bottom"
+            android:text="@string/phone_086_234_5678"
+            android:textColor="@color/colorForText"
+            android:textSize="15sp"
+            tools:ignore="VisualLintOverlap" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_marginStart="10dp"
+            android:gravity="bottom"
+            android:text="@string/website_www_ericsson_com"
+            android:textColor="@color/colorForText"
+            android:textSize="15sp" />
+    </RelativeLayout>
+<ScrollView
+    android:id="@+id/techvideocontainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/techvideofooter"
+    android:layout_below="@+id/techvideoheader">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
         <EditText
             android:id="@+id/editTextTextMultiLine6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:ems="10"
             android:gravity="start|top"
             android:inputType="textMultiLine"
-            android:text="Tech Day gives amazing opportunities to schools around Ireland. They get a chance to come on site to Ericsson and present their young scientist projects and showcase their amazing work. Last Year Moate Community School presented their project 'Coding the solution to Ireland's scam call issue', which they were awarded First Place in the Junior Technology category at BT Young Scientist (2022). " />
+            android:text="@string/tech_day_gives_amazing_opportunities_to_schools_around_ireland_they_get_a_chance_to_come_on_site_to_ericsson_and_present_their_young_scientist_projects_and_showcase_their_amazing_work_last_year_moate_community_school_presented_their_project_coding_the_solution_to_ireland_s_scam_call_issue_which_they_were_awarded_first_place_in_the_junior_technology_category_at_bt_young_scientist_2022"
+            tools:ignore="Autofill,LabelFor" />
 
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/youtubeplayerId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView>
     </LinearLayout>
+</ScrollView>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <EditText
-            android:id="@+id/editTextTextMultiLine5"
-            android:layout_width="399dp"
-            android:layout_height="47dp"
-            android:background="#3572DE"
-            android:ems="10"
-            android:gravity="start|top"
-            android:inputType="textMultiLine"
-            android:text="   Contact Us                  Email:INFO@EST.TECH
-                 Phone:(090) 643 1000      Website: Ericsson.com"
-            android:textColor="#FFFFFF"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
-
-    </LinearLayout>
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
