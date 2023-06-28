@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <RelativeLayout
+        android:id="@+id/dataheader"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="#3572DE"
+        android:gravity="center"
+        tools:ignore="MissingConstraints">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="sans-serif-black"
+        android:text="TY Week"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/datafooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#3572de"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginStart="10dp"
+            android:text="Contact Us"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText,VisualLintOverlap" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginStart="10dp"
+            android:gravity="bottom"
+            android:text="Email: infuse@ericsson.com"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText,VisualLintOverlap" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:gravity="bottom"
+            android:text="Phone: (086) 234 5678"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText,VisualLintOverlap" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_marginStart="10dp"
+            android:gravity="bottom"
+            android:text="Website: www.ericsson.com"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="412dp"
+        android:layout_height="201dp"
+        android:text="@string/while_students_are_in_ericsson_they_will_be_given_a_tour_of_the_ericsson_data_center_this_is_where_ericsson_store_all_their_hardware_drives_and_cooling_systems_they_always_keep_a_reserve_of_each_thing_in_case_one_fails_they_have_a_backup_until_the_other_is_fixed"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.207"
+        tools:ignore="TextSizeCheck,VisualLintBounds" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="381dp"
+        android:layout_height="66dp"
+        android:backgroundTint="#3572DE"
+        android:onClick="datacenterSettings"
+        android:text="@string/press_here_to_watch_a_video_of_a_tour_of_the_data_center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.777"
+        tools:ignore="TextSizeCheck,VisualLintButtonSize,TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="415dp"
+        android:layout_height="183dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6"
+        app:srcCompat="@drawable/img_servers"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription,HardcodedText,VisualLintBounds" />
+</androidx.constraintlayout.widget.ConstraintLayout>

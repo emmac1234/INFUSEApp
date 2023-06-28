@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TYActivity">
+
+    <RelativeLayout
+        android:id="@+id/tyweekheader"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="#3572DE"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif-black"
+            android:text="TY Week"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            tools:ignore="HardcodedText,TextContrastCheck" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/tyweekfooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#3572de">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginStart="10dp"
+            android:text="Contact Us"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText,VisualLintOverlap"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginStart="10dp"
+            android:gravity="bottom"
+            android:text="Email: infuse@ericsson.com"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText,VisualLintOverlap"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:gravity="bottom"
+            android:text="Phone: (086) 234 5678"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText,VisualLintOverlap"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_marginStart="10dp"
+            android:gravity="bottom"
+            android:text="Website: www.ericsson.com"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/tyweekcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tyweekfooter"
+        android:layout_below="@+id/tyweekheader"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="-6dp"
+        android:layout_marginBottom="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="The students will be allowed to sit in on some important presentations to see whats being done in certain areas and will then get to join a live video call between the managers at Ericsson. They will learn about Scratch and how to use it for their projects and finally they will learn about different types of software"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText,TextSizeCheck" />
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="During TY Week, students will be given a brief tour of the buildings and introduced to some members of staff. They will then be given an insight into the careers of some of those who work for the company."
+                android:textSize="20sp"
+                tools:ignore="HardcodedText,TextSizeCheck" />
+
+            <Button
+                android:id="@+id/data"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#3265BF"
+                android:onClick="datacenterSettings"
+                android:text="Data Center Tour"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/python"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:layout_gravity="right"
+                android:backgroundTint="#f1f013"
+                android:onClick="pythonSettings"
+                android:text="Python"
+                tools:ignore="HardcodedText,RtlHardcoded,TextContrastCheck" />
+
+            <Button
+                android:id="@+id/agile"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="#3265bf"
+                android:onClick="agileSettings"
+                android:text="Agile Overview"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/html"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:layout_gravity="right"
+                android:backgroundTint="#f1f013"
+                android:onClick="htmlsettings"
+                android:text="HTML"
+                tools:ignore="HardcodedText,RtlHardcoded,TextContrastCheck" />
+
+            <Button
+                android:id="@+id/microbit"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="#3265bf"
+                android:onClick="microbitsettings"
+                android:text="Micro:bit"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/internet"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:layout_gravity="right"
+                android:backgroundTint="#f1f013"
+                android:onClick="internetsecuritysettings"
+                android:text="Internet Security"
+                tools:ignore="HardcodedText,RtlHardcoded,TextContrastCheck" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

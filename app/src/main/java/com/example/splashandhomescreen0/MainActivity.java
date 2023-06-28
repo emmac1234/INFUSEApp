@@ -18,6 +18,12 @@ public class MainActivity extends AppCompatActivity{
             startActivity(intent);
         });
 
+        Button button2 = findViewById(R.id.button_ty);
+        button2.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, TYActivity.class);
+            startActivity(intent);
+        });
+
     }
 
 }
