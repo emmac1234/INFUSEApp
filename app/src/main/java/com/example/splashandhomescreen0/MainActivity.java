@@ -24,6 +24,12 @@ public class MainActivity extends AppCompatActivity{
             startActivity(intent);
         });
 
+        Button button3 = findViewById(R.id.button_career);
+        button3.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, CareersActivity.class);
+            startActivity(intent);
+        });
+
     }
 
 }
