@@ -18,19 +18,60 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
-            android:exported="false">
-        </activity>
+            android:name=".agileActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".ANDROID_INTERNSHIP"
+            android:exported="true"/>
+        <activity
+            android:name=".CareersActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".careersmainActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".girlsinict"
+            android:exported="true"/>
+        <activity android:name=".microbitvideo1"
+            android:exported="true"/>
+        <activity android:name=".scrumteamsettings"
+            android:exported="true"/>
+        <activity android:name=".SettingsActivity"
+            android:exported="true"/>
+        <activity android:name=".Settingsdatacentertour"
+            android:exported="true"/>
+        <activity android:name=".Settingshtml"
+            android:exported="true"/>
+        <activity android:name=".settingshtmlvideo"
+            android:exported="true"/>
+        <activity android:name=".Settingsinternetsecurity"
+            android:exported="true"/>
+        <activity android:name=".settingsinternetsecurityvideo"
+            android:exported="true"/>
+        <activity android:name=".Settingsmicrobit"
+            android:exported="true"/>
+        <activity android:name=".SettingsPython"
+            android:exported="true"/>
+        <activity android:name=".settingspythonvideo"
+            android:exported="true"/>
+        <activity android:name=".TechActivity"
+            android:exported="true"/>
+        <activity android:name=".TechVidActivity"
+            android:exported="true"/>
+        <activity android:name=".TYActivity"
+            android:exported="true"/>
+        <activity android:name=".WEB_Vidos"
+            android:exported="true"/>
+        <activity android:name=".WebApp"
+            android:exported="true"/>
 
         <activity
-            android:name=".TechVidActivity"
-            android:exported="false" />
-        <activity
-            android:name=".TechActivity"
+            android:name=".MainActivity"
             android:exported="true">
         </activity>
     </application>

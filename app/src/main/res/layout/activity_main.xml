@@ -155,7 +155,7 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textColor="@color/colorForText"
                 android:typeface="normal"
-                tools:ignore="RtlCompat,VisualLintButtonSize" />
+                tools:ignore="RtlCompat,VisualLintButtonSize,TextSizeCheck" />
 
             <Button
                 android:id="@+id/button_internship"

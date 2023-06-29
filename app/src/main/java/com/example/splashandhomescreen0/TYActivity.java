@@ -40,4 +40,15 @@ public class TYActivity extends AppCompatActivity {
         Intent i = new Intent(this, Settingsmicrobit.class);
         startActivity(i);
     }
+
+    public void agileSettings(View view) {
+        Intent i= new Intent(this, agileActivity.class);
+        startActivity(i);
+    }
+    public void Settingdatacentertour(View v) {
+        //launch a new activity
+
+        Intent i = new Intent(this, Settingsmicrobit.class);
+        startActivity(i);
+    }
 }
