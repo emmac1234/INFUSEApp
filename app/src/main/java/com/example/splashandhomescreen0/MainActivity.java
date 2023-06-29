@@ -12,15 +12,15 @@ public class MainActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button button1 = findViewById(R.id.button_tech);
+        Button button1 = findViewById(R.id.button_ty);
         button1.setOnClickListener(view -> {
-            Intent intent = new Intent(MainActivity.this, TechActivity.class);
+            Intent intent = new Intent(MainActivity.this, TYActivity.class);
             startActivity(intent);
         });
 
-        Button button2 = findViewById(R.id.button_ty);
+        Button button2 = findViewById(R.id.button_tech);
         button2.setOnClickListener(view -> {
-            Intent intent = new Intent(MainActivity.this, TYActivity.class);
+            Intent intent = new Intent(MainActivity.this, TechActivity.class);
             startActivity(intent);
         });
 
@@ -30,59 +30,18 @@ public class MainActivity extends AppCompatActivity{
             startActivity(intent);
         });
 
+        Button button4 = findViewById(R.id.button_girls);
+        button4.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, girlsinict.class);
+            startActivity(intent);
+        });
+        Button button5 = findViewById(R.id.button_internship);
+        button5.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, ANDROID_INTERNSHIP.class);
+            startActivity(intent);
+        });
+
     }
 
 }
 
-//        Button button1 = findViewById(R.id.button_girls);
-//        button1.setOnClickListener(v -> {
-//            Intent intent = new Intent(MainActivity.this, girlsInICTMain.class);
-//            startActivity(intent);
-//        });}}
-
-//        Button button2 = findViewById(R.id.button_career);
-//        button2.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-//                startActivity(intent);
-//            }
-//        });
-//
-//        Button button3 = findViewById(R.id.button_ty);
-//        button3.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(MainActivity.this, ThirdActivity.class);
-//                startActivity(intent);
-//            }
-//        });
-//
-//
-//        Button button2 = findViewById(R.id.button_internship);
-//        button2.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-//                startActivity(intent);
-//            }
-//        });
-//
-//        Button button3 = findViewById(R.id.button_school);
-//        button3.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(MainActivity.this, ThirdActivity.class);
-//                startActivity(intent);
-//            }
-//        });
-//        Button button3 = findViewById(R.id.button_website);
-//        button3.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(MainActivity.this, ThirdActivity.class);
-//                startActivity(intent);
-//            }
-//        });
-///
-//

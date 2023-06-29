@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TheOrgansOffTheCode">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="#3572de"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Website Videos"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#3572de">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginStart="10dp"
+            android:text="Contact Us"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            tools:ignore="VisualLintOverlap" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginStart="10dp"
+            android:gravity="bottom"
+            android:text="Email:infuse@ericsson_com"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            tools:ignore="VisualLintOverlap" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:gravity="bottom"
+            android:text="Phone:(086) 234 5678"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            tools:ignore="VisualLintOverlap" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_marginStart="10dp"
+            android:gravity="bottom"
+            android:text="Website:www.ericsson.com"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="337dp"
+        android:layout_height="427dp"
+        android:layout_below="@+id/header"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="183dp"
+        android:text="Web Videos
+On our app we have a page for website videos which includes information videos about both Micro:bit and Scratch
+WHAT IS SCRATCH?  Scratch is a great way to start programming. Scratch is a high-level block-based visual programming language and website aimed primarily at children as an educational tool, with a target audience of ages 8 to 16. Users on the site, called Scratchers, can create projects on the website using a block-like interface.
+Scratch is a block-based programming for beginners instead of typing out code you drag and drop blocks, like a puzzle.Scratch blocks are categorised by colour. blue = motion. purple = looks. pink = sound. You can use these blocks to move, make sounds and change outfits. Sprints are the objects that you can program. Costumes are the different outfits and looks your sprites can wear. You can choose or make your own. Backgrounds are the different back drops you can have you can create your own" />
+
+</RelativeLayout>
+
+
+
+

@@ -139,39 +139,6 @@
                 android:typeface="normal"
                 tools:ignore="RtlCompat,TextContrastCheck,TextSizeCheck,VisualLintButtonSize" />
 
-            <Button
-                android:id="@+id/button_school"
-                android:layout_width="350dp"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="30dp"
-                android:background="@drawable/school_tour_bg"
-                android:fontFamily="sans-serif-medium"
-                android:orientation="horizontal"
-                android:padding="3dp"
-                android:text="@string/school_tour_nlearn_more_about_the_different_types_of_school_tours_ericsson_offers"
-                android:textAlignment="textStart"
-                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                android:textColor="@color/colorForText"
-                android:typeface="normal"
-                tools:ignore="RtlCompat,TextContrastCheck,TextSizeCheck,VisualLintButtonSize" />
-
-            <Button
-                android:id="@+id/button_website"
-                android:layout_width="350dp"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="30dp"
-                android:background="@drawable/website_videos_bg"
-                android:fontFamily="sans-serif-medium"
-                android:orientation="horizontal"
-                android:padding="3dp"
-                android:text="@string/website_videos_nlearn_scratch_and_micro_bit_with_these_helpful_and_easy_to_follow_videos"
-                android:textAlignment="textStart"
-                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                android:textColor="@color/colorForText"
-                android:typeface="normal"
-                tools:ignore="RtlCompat,VisualLintButtonSize" />
 
             <Button
                 android:id="@+id/button_girls"

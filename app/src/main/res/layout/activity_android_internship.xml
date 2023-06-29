@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ANDROID_INTERNSHIP">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="#3572de"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Android Internship"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#3572de">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginStart="10dp"
+            android:text="Contact Us"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            tools:ignore="VisualLintOverlap" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginStart="10dp"
+            android:gravity="bottom"
+            android:text="Email:infuse@ericsson_com"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            tools:ignore="VisualLintOverlap" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:gravity="bottom"
+            android:text="Phone:(086) 234 5678"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            tools:ignore="VisualLintOverlap" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_marginStart="10dp"
+            android:gravity="bottom"
+            android:text="Website:www.ericsson.com"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="253dp"
+        android:text="ANDROID INTERN SHIP
+As an intern at Ericsson, you’ll learn so much. You’ll learn from some of the brightest minds in our industry – in a supportive, open environment where you can ask anyone, anything, anywhere around the world. You will work on challenging projects and develop your skills in the areas you’re most passionate about. You’ll learn a lot from us, and you’ll learn a lot about yourself too. About your strengths, your interests and the areas to develop as your look forward to your future career.
+Key points
+ 	Internship applicants must meet student requirements to apply
+ 	We recruit locally and have opportunities all over the world
+ 	It’s real work with real responsibilities
+ 	We’ll also give you structured training to build your business skills from the word
+We recruit interns from diverse backgrounds, from various areas of study and into every area of our business, including Computer Science, Computer Engineering, Electrical Engineering, Information Technology, Management, Information Systems, Business, Finance/Accounting, Marketing and Human Resource Management
+" />
+
+
+</RelativeLayout>
+
+
+
+
